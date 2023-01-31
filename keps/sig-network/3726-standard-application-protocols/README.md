@@ -143,7 +143,7 @@ Those common protocols will be well defined strings prefixed with ‘k8s.io’.
 `k8s.io/h2c` as an example.
 
 ### New Standard Protocols
-- 'k8s.io/http2'
+- 'k8s.io/h2c'
 - 'k8s.io/grpc'
 - 'k8s.io/tcp'
 
@@ -178,7 +178,7 @@ type ServicePort struct {
   // RFC-6335 and https://www.iana.org/assignments/service-names).
   //
   // * Kubernetes standard names:
-  //   * 'k8s.io/http2' - http2 over cleartext, aka 'h2c'. https://www.rfc-editor.org/rfc/rfc7540
+  //   * 'k8s.io/h2c' - http2 over cleartext as described in https://www.rfc-editor.org/rfc/rfc7540
   //   * 'k8s.io/grpc' - grpc traffic - see https://github.com/grpc/grpc/blob/v1.51.1/doc/PROTOCOL-HTTP2.md
   //   * 'k8s.io/tcp' - plain tcp traffic
   //
